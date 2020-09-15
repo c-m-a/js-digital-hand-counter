@@ -83,8 +83,6 @@ body {
   flex-direction: column;
   position: absolute;
   bottom: -4rem;
-  left: 50%;
-  transform: translateX(-50%);
   height: 10rem;
   width: 15rem;
 }
@@ -99,9 +97,19 @@ body {
 }
 
 .counter__push-button {
+  font-size: 4rem;
+  cursor: pointer;
   border: .1rem solid #cdc7c2;
   border-radius: 50%;
   height: 7rem;
   width: 7rem;
   background-color: #f6f7f5;
+}
+
+.counter__button-inc-box {
+  right: -1rem;
+}
+
+.counter__button-dec-box {
+  left: -1rem;
 }

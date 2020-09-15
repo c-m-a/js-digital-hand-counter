@@ -12,6 +12,15 @@ function increase() {
   d3.innerText = parseInt(counter / 1000) % 10;
 }
 
+function decrease() {
+  if (counter === 0) return false;
+  counter--;
+  d0.innerText = counter % 10;
+  d1.innerText = parseInt(counter / 10) % 10;
+  d2.innerText = parseInt(counter / 100) % 10;
+  d3.innerText = parseInt(counter / 1000) % 10;
+}
+
 function reset() {
   counter = 0;
   d0.innerText = 0;
