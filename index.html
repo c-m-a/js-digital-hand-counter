@@ -2,37 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css" media="all">
     <title>Digital App Counter</title>
   </head>
   <body>
     <main>
+      <div class="info__button"></div>
+      <div class="whatsapp__button"></div>
       <div class="counter__wrapper">
-        <div class="counter__shell">
-          <div class="counter__display">
-            <div class="counter__border">
-              <div class="counter__number-box">
-                <div id="d3" class="counter__digit-3">0</div>
-                <div id="d2" class="counter__digit-2">0</div>
-                <div id="d1" class="counter__digit-1">0</div>
-                <div id="d0" class="counter__digit-0">0</div>
-              </div>
-            </div>
-          </div>
-          <div onclick="decrease()" class="counter__button-box counter__button-dec-box">
-            <div class="counter__corner">
-            </div>
-            <button class="counter__push-button">-</button>
-          </div>
-          <div onclick="increase()" class="counter__button-box counter__button-inc-box">
-            <div class="counter__corner">
-            </div>
-            <button class="counter__push-button">+</button>
-          </div>
+        <div>
+          <h2>Control De Aforo</h2>
+          Establecimiento: Islamorada <br/>
+          Capacidad: 10 de 100, 10% <br/>
+          Mesa libre estimado en: 5min <br/>
+          Puerta: Norte <br/>
         </div>
-        <div onclick="reset()" class="counter__reset">
+        <div class="counter__img">
+          <img src="./img/hand-counter.webp" alt="">
+          <div onclick="reset()" class="counter__reset"></div>
+          <div class="counter__number-box">
+            <div id="d3" class="counter__digit-3">0</div>
+            <div id="d2" class="counter__digit-2">0</div>
+            <div id="d1" class="counter__digit-1">0</div>
+            <div id="d0" class="counter__digit-0">0</div>
+          </div>
+          <div class="counter__buttons">
+            <button onclick="decrease()" class="counter__push-button">
+              <img src="./img/minus-button.png" alt="add">
+            </button>
+            <button onclick="increase()" class="counter__push-button">
+              <img src="./img/add-button.png" alt="minus">
+            </button>
+          </div>
         </div>
       </div>
     </main>

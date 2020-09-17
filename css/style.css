@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
 }
 
 :root {
@@ -25,6 +26,7 @@ body {
 .counter__wrapper {
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -32,85 +34,66 @@ body {
   padding: 10px;
 }
 
-.counter__shell {
-  position: relative;
-  flex: .75;
-  border-radius: 20%;
-  height: 30rem;
-  background-color: #f6f7f5;
-  border: .1rem solid #cdc7c2;
-}
-
 .counter__reset {
-  flex: .15;
-  height: 7rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  background-color: black;
-}
-
-.counter__display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: 20rem;
-}
-
-.counter__border {
-  width: 100%;
-  padding: 2rem;
-  border-radius: .5rem;
-  background-color: gray;
+  top: 14rem;
+  right: 3rem;
+  height: 7rem;
+  width: 7rem;
+  z-index: 1;
 }
 
 .counter__number-box {
-  padding: 1.5rem;
+  position: absolute;
+  top: 15rem;
+  left: 11.2rem;
+  padding: .5rem 1rem;
   display: flex;
   justify-content: space-between;
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   background-color: black;
-  height: 9rem;
+  width: 9.2rem;
 }
 
-.counter__button-box {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.counter__buttons {
   position: absolute;
-  bottom: -4rem;
-  height: 10rem;
-  width: 15rem;
-}
-
-.counter__corner {
-  width: 4rem;
-  flex: 1;
-  border-top: .1rem solid #cdc7c2;
-  border-right: .1rem solid #cdc7c2;
-  border-left: .1rem solid #cdc7c2;
-  background-color: #f6f7f5;
+  display: flex;
+  justify-content: space-between;
+  left: 9rem;
+  width: 14rem;
+  bottom: 1rem;
 }
 
 .counter__push-button {
   font-size: 4rem;
   cursor: pointer;
-  border: .1rem solid #cdc7c2;
-  border-radius: 50%;
-  height: 7rem;
-  width: 7rem;
-  background-color: #f6f7f5;
+  height: 6rem;
+  width: 6rem;
+  z-index: 1;
+  bottom: 1rem;
+  border: none;
+  background-color: transparent;
 }
 
 .counter__button-inc-box {
-  right: -1rem;
+  right: 40px;
 }
 
 .counter__button-dec-box {
-  left: -1rem;
+  left: 40px;
+}
+
+.counter__img {
+  position: relative;
+}
+
+.counter__img img {
+  display: block;
+  width: 100%;
+}
+
+.counter__push-button img {
+  width: 100%;
 }
